@@ -1,0 +1,37 @@
+main
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    overflow: hidden
+
+.content
+    display: grid
+    grid-template-columns: auto 15vmax
+    gap: 10px
+    height: 100%
+
+.users
+    background: silver
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff
+    padding: 3px
+    overflow-y: scroll
+    display: grid
+    grid-auto-rows: 20px
+    border: 1px solid black
+    background: #000000
+    color: #00df00
+    max-height: calc( 100vh - 45px )
+
+.chat
+    display: grid
+    grid-template-rows: auto 20px
+
+    &__messages
+
+    &__input
+        display: flex
+
+        input
+            flex: 1
