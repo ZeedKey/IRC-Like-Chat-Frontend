@@ -1,0 +1,3 @@
+query Login($loginInput: CreateUserInput!){
+    login(user: $loginInput)
+}

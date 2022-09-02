@@ -1,5 +1,5 @@
-import { Window } from "@common";
-import styles from "./auth.module.sass";
+import { Window } from '@common';
+import styles from './auth.module.sass';
 
 export const Auth: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ export const Auth: React.FC = () => {
           <form className={styles.auth__form}>
             <div className="field-row-stacked">
               <label htmlFor="text22">Login</label>
-              <input id="text22" type={"text"} />
+              <input id="text22" type="text" />
             </div>
             <div className="field-row-stacked">
               <label htmlFor="text23">Password</label>
