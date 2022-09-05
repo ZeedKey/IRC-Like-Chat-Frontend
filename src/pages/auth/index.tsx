@@ -11,12 +11,12 @@ export const Auth: React.FC = () => {
           </div>
           <form className={styles.auth__form}>
             <div className="field-row-stacked">
-              <label htmlFor="text22">Login</label>
-              <input id="text22" type="text" />
+              <label htmlFor="login">Login</label>
+              <input id="login" type="text" maxLength={16} />
             </div>
             <div className="field-row-stacked">
-              <label htmlFor="text23">Password</label>
-              <input id="text23" type="password" />
+              <label htmlFor="password">Password</label>
+              <input id="password" type="password" />
             </div>
             <button type="submit">Submit</button>
           </form>
