@@ -26,9 +26,23 @@ main
 
 .chat
     display: grid
-    grid-template-rows: auto 20px
+    grid-template-rows: auto 20px 20px
+    gap: 5px
+
+    &__filter
+        width: 15vmax
+        display: flex
+
+        input
+            flex: 1
 
     &__messages
+        display: grid
+        grid-auto-rows: 16.5px
+        background: silver
+        padding: 10px
+        background-color: #000000
+        box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff
 
     &__input
         display: flex
