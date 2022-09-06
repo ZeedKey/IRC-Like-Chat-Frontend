@@ -1,46 +1,55 @@
 body
     background-color: #008080
 
-.auth
-    height: 100%
-    display: flex
-    flex-direction: column
+main
+    display: grid
+    grid-template-columns: 10vmax 20vmax 10vmax
     justify-content: center
     align-items: center
+    gap: 30px
 
-    &__servers
-        width: 30vmax
-        height: auto
-        margin-top: 25px
+    section
 
-        ul
-            display: grid
-            height: 100%
-            gap: 5px
-            margin: 0
-            padding-left: 10px
-
-            li
-                font-weight: 900
-                span
-                    color: red
-
-        h5
-            font-size: 2.2ch
-            margin: 0
-
-    &__enter
-        width: 30vmax
-        height: auto
-
-    &__welcome
-        h5
-            font-size: 2.2ch
-
-    &__form
+.auth
+    &__body
         display: flex
         flex-direction: column
-        justify-content: space-between
+        gap: 8.5px
+        margin-bottom: 15px
 
-        button
-            margin-top: 20px
+    &__authtype
+        animation: typing 0.85s steps(40, end), blink-caret .75s step-end infinite
+
+    &__title
+        width: 100%
+        overflow: hidden
+        white-space: nowrap
+        font-size: 2ch
+        font-weight: bold
+        animation: typing 0.85s steps(40, end), blink-caret .75s step-end infinite
+
+.server
+    &__list
+        display: flex
+        flex-direction: column
+        padding-left: 18px
+
+    &__title
+        font-size: 1.7ch
+        margin: 0
+
+    &__body
+        display: flex
+        flex-direction: column
+
+@keyframes blink-caret
+    from
+        border-color: transparent
+    to
+        border-color: transparent
+
+@keyframes typing
+    from
+        width: 0
+    to
+        width: 100%
